@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CartaBot - Restaurante</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      text-align: center;
+    }
+
+    header {
+      background-color: #007bff;
+      color: white;
+      padding: 20px 0;
+      font-size: 1.5rem;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    df-messenger {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+      width: 300px;
+      height: 400px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    🍽️ CartaBot del Restaurante
+  </header>
+
+  <main>
+    <h1>Bienvenido al chatbot del restaurante</h1>
+    <p>Pregunta sobre nuestro menú, categorías o platos recomendados.</p>
+  </main>
+
+  <!-- Dialogflow Messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+    chat-title="CartaAgentieMvp"
+    agent-id="c8ebfc26-c89a-4911-a706-26a389b533d4"
+    language-code="es"
+  ></df-messenger>
+
+</body>
+</html>
